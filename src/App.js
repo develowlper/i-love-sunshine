@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 import styled, {
   x,
   Preflight,
   createGlobalStyle
-} from "@xstyled/styled-components";
+} from '@xstyled/styled-components';
 
 const Heart = styled.div`
   position: relative;
   width: 100px;
   height: 90px;
-
+  animation: ping;
   &:before,
   :after {
     position: absolute;
-    content: "";
+    content: '';
     left: 50px;
     top: 0;
     width: 50px;
     height: 80px;
-    background: red;
+    background: hsl(320, 100%, 50%);
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
@@ -48,7 +48,6 @@ export default function App() {
     <>
       <Preflight />
       <GlobalStyle />
-      <x.div></x.div>
       <x.div fontSize={90}>I</x.div>
       <Heart />
       <x.div fontSize={90}>
