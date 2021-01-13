@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import styled, {
   x,
   Preflight,
   createGlobalStyle,
   keyframes
-} from "@xstyled/styled-components";
+} from '@xstyled/styled-components';
 
 const backdrop = keyframes`
   50% {
@@ -29,7 +29,7 @@ const Heart = styled.div`
   &:before,
   :after {
     position: absolute;
-    content: "";
+    content: '';
     left: 50px;
     top: 0;
     width: 50px;
